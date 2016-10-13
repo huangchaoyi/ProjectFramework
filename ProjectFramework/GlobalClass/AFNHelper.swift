@@ -85,6 +85,12 @@ class AFNHelper: AFHTTPSessionManager {
      */
     class func post(_ vc:UIViewController?,urlString:String,parameters:NSDictionary?,isHUD:Bool=false,isHUDMake:Bool=false,success:((_ json:JSON?) -> Void)?,failure:((_ error:NSError) -> Void)?) -> Void {
         
+        if(vc != nil ){    //nav进度条  vc.CustomNavProgress是拓展的进度函数
+            vc!.performSelector(inBackground: #selector(vc!.CustomNavProgress), with: nil)
+        }
+        
+        if(isHUD==true){ CommonFunction.HUD("数据加载中...", type: MsgType.load,ismask: isHUDMake)}  //HUD
+        
         AFNHelper.shareManager.post(urlString, parameters: parameters, progress: { (progress) in
             
             }, success: { (task, responseObject) in

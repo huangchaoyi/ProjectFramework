@@ -7,4 +7,5 @@
 //
 
 #import "UITableView+CYLTableViewPlaceHolder.h"
+#import "UICollectionView+CYLCollectionViewPlaceHolder.h"
 #import "CYLTableViewPlaceHolderDelegate.h"

@@ -45,7 +45,6 @@
 		27E4D5651CB3AC5C002F32D1 /* SwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E4D5641CB3AC5C002F32D1 /* SwiftExtension.swift */; };
 		27E4D5671CB3AD3B002F32D1 /* CustomSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27E4D5661CB3AD3B002F32D1 /* CustomSettings.bundle */; };
 		27E4D5691CB3B12F002F32D1 /* ScrollViewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E4D5681CB3B12F002F32D1 /* ScrollViewPageViewController.swift */; };
-		27E6B8781CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E6B8711CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.m */; };
 		27E6B8791CF1E28400DD6418 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E6B8741CF1E28400DD6418 /* MBProgressHUD+NJ.m */; };
 		27E6B87A1CF1E28400DD6418 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27E6B8751CF1E28400DD6418 /* MBProgressHUD.bundle */; };
 		27E6B87B1CF1E28400DD6418 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E6B8771CF1E28400DD6418 /* MBProgressHUD.m */; };
@@ -74,6 +73,8 @@
 		2E5E84331D399B88008BAA08 /* TemplatesSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E84321D399B88008BAA08 /* TemplatesSettings.bundle */; };
 		2E9FFC101D2594B3009B7B81 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9FFC0F1D2594B3009B7B81 /* Reachability.m */; };
 		2E9FFC121D259F43009B7B81 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9FFC111D259F43009B7B81 /* CFNetwork.framework */; };
+		2EAB76B61DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB76B31DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m */; };
+		2EAB76B71DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB76B51DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m */; };
 		2EF5844C1D93088F002A0DE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF584481D93088F002A0DE0 /* HomeViewController.swift */; };
 		2EF5844D1D93088F002A0DE0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5844B1D93088F002A0DE0 /* Home.storyboard */; };
 		2EF5846F1D9308E3002A0DE0 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF584521D9308E3002A0DE0 /* MyViewController.swift */; };
@@ -156,10 +157,6 @@
 		27E4D5641CB3AC5C002F32D1 /* SwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtension.swift; sourceTree = "<group>"; };
 		27E4D5661CB3AD3B002F32D1 /* CustomSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CustomSettings.bundle; sourceTree = "<group>"; };
 		27E4D5681CB3B12F002F32D1 /* ScrollViewPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewPageViewController.swift; sourceTree = "<group>"; };
-		27E6B86E1CF1E28400DD6418 /* CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolder.h; sourceTree = "<group>"; };
-		27E6B86F1CF1E28400DD6418 /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
-		27E6B8701CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
-		27E6B8711CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
 		27E6B8731CF1E28400DD6418 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
 		27E6B8741CF1E28400DD6418 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
 		27E6B8751CF1E28400DD6418 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -194,6 +191,12 @@
 		2E9FFC0E1D2594B3009B7B81 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2E9FFC0F1D2594B3009B7B81 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2E9FFC111D259F43009B7B81 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2EAB76B01DAFECA500F54DDE /* CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolder.h; sourceTree = "<group>"; };
+		2EAB76B11DAFECA500F54DDE /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
+		2EAB76B21DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+CYLCollectionViewPlaceHolder.h"; sourceTree = "<group>"; };
+		2EAB76B31DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CYLCollectionViewPlaceHolder.m"; sourceTree = "<group>"; };
+		2EAB76B41DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
+		2EAB76B51DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
 		2EF584481D93088F002A0DE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2EF5844B1D93088F002A0DE0 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2EF584521D9308E3002A0DE0 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -497,23 +500,12 @@
 		27E6B86C1CF1E28400DD6418 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				2EAB76AF1DAFECA500F54DDE /* CYLTableViewPlaceHolder */,
 				2E276DD51D27149800800803 /* UINavigationController+SGProgress */,
 				2E9FFC0D1D2594B3009B7B81 /* NetworkCheck */,
-				27E6B86D1CF1E28400DD6418 /* CYLTableViewPlaceHolder */,
 				27E6B8721CF1E28400DD6418 /* MBProgressHUD */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		27E6B86D1CF1E28400DD6418 /* CYLTableViewPlaceHolder */ = {
-			isa = PBXGroup;
-			children = (
-				27E6B86E1CF1E28400DD6418 /* CYLTableViewPlaceHolder.h */,
-				27E6B86F1CF1E28400DD6418 /* CYLTableViewPlaceHolderDelegate.h */,
-				27E6B8701CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.h */,
-				27E6B8711CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.m */,
-			);
-			path = CYLTableViewPlaceHolder;
 			sourceTree = "<group>";
 		};
 		27E6B8721CF1E28400DD6418 /* MBProgressHUD */ = {
@@ -565,6 +557,19 @@
 				2E9FFC0F1D2594B3009B7B81 /* Reachability.m */,
 			);
 			path = NetworkCheck;
+			sourceTree = "<group>";
+		};
+		2EAB76AF1DAFECA500F54DDE /* CYLTableViewPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB76B01DAFECA500F54DDE /* CYLTableViewPlaceHolder.h */,
+				2EAB76B11DAFECA500F54DDE /* CYLTableViewPlaceHolderDelegate.h */,
+				2EAB76B21DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.h */,
+				2EAB76B31DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m */,
+				2EAB76B41DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.h */,
+				2EAB76B51DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m */,
+			);
+			path = CYLTableViewPlaceHolder;
 			sourceTree = "<group>";
 		};
 		2EF584441D93088F002A0DE0 /* ViewController */ = {
@@ -1038,6 +1043,7 @@
 				2EF584701D9308E3002A0DE0 /* AboutViewController.swift in Sources */,
 				2750AF7A1D0DADC9003D117E /* HttpsForget+Password.swift in Sources */,
 				2EF584781D9308E3002A0DE0 /* SettingsTableViewCell.swift in Sources */,
+				2EAB76B71DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				2E276DDA1D27149800800803 /* SGProgressView.m in Sources */,
 				2EF584881D933885002A0DE0 /* AFNHelper.swift in Sources */,
 				0747CCED1D1285FD00C2FAB4 /* CustomImageView.swift in Sources */,
@@ -1051,7 +1057,6 @@
 				2E55B7601D21D85E00E1A2E6 /* UpLoadPicManagerView.swift in Sources */,
 				2EF584751D9308E3002A0DE0 /* MyInfoViewController.swift in Sources */,
 				27E4D5691CB3B12F002F32D1 /* ScrollViewPageViewController.swift in Sources */,
-				27E6B8781CF1E28400DD6418 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				2E3AB4901D1EE0F600F8BCFD /* ScreeningViewController.swift in Sources */,
 				27E6B87B1CF1E28400DD6418 /* MBProgressHUD.m in Sources */,
 				2750AF761D0DAD35003D117E /* HttpsLogin.swift in Sources */,
@@ -1070,6 +1075,7 @@
 				2E3CD6061D3086080057B7F2 /* LoginLogicViewModel.swift in Sources */,
 				27E4D5631CB3AC3A002F32D1 /* PictrueSelectedViewController.swift in Sources */,
 				271653BC1CF616530028C465 /* RegisterViewController.swift in Sources */,
+				2EAB76B61DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m in Sources */,
 				27609BD01CB257810041E8B7 /* AppDelegate.swift in Sources */,
 				2EF5847A1D9308E3002A0DE0 /* MyItemTableViewCell.swift in Sources */,
 				2E9FFC101D2594B3009B7B81 /* Reachability.m in Sources */,

@@ -8,17 +8,18 @@
 
 import UIKit
 import MJRefresh
-import SWTableViewCell
 
-class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource,CYLTableViewPlaceHolderDelegate,SWTableViewCellDelegate {
+class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource,CYLTableViewPlaceHolderDelegate {
     
     fileprivate var tableView:UITableView? = nil
+    fileprivate var collection:UICollectionView? = nil
     
     // 顶部刷新
     let header = MJRefreshNormalHeader()
     // 底部刷新
     let footer = MJRefreshAutoNormalFooter()
     
+    ///Tableview
     internal func InitCongif(_ tableView:UITableView){
         self.tableView=tableView
         tableView.delegate=self //设置代理
@@ -37,16 +38,35 @@ class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITab
         
         self.footer.isAutomaticallyHidden=true    //隐藏当前footer 会自动根据数据来隐藏和显示
     }
-  
+    
+    ///Collection
+    internal func InitCongifCollection(_ Collection:UICollectionView){
+        self.collection=Collection
+        Collection.delegate=self //设置代理
+        Collection.dataSource=self   //设置数据源
+        self.automaticallyAdjustsScrollViewInsets=false // //取消掉被NavigationController管理的自动留白
+        // 下拉刷新
+        header.setRefreshingTarget(self, refreshingAction:#selector(CustomTableViewViewController.headerRefresh))
+        self.collection?.mj_header = header
+        
+        // 上拉刷新
+        footer.setRefreshingTarget(self, refreshingAction:#selector(CustomTableViewViewController.footerRefresh))
+        self.collection?.mj_footer = footer
+        self.view.addSubview(Collection)
+        
+        self.footer.isAutomaticallyHidden=true    //隐藏当前footer 会自动根据数据来隐藏和显示
+    }
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad() 
+        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-     
+    
     
     // MARK: - 上拉下拉 刷新
     
@@ -57,11 +77,11 @@ class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITab
     
     /// 底部刷新
     func footerRefresh(){
-       
+        
     }
     
     // MARK: - 空数据的时候TableView Placeholder
-     func makePlaceHolderView() -> UIView! {
+    func makePlaceHolderView() -> UIView! {
         if(NetWordStatus==true){
             let vc =   TableViewEmptyView(1, target: self,action: #selector(CustomTableViewViewController.EmptyOverlayClicked))
             return vc
@@ -69,7 +89,7 @@ class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITab
             let vc =   TableViewEmptyView(2, target: self,action: #selector(CustomTableViewViewController.EmptyOverlayClicked))
             return vc
         }
-       
+        
     }
     
     // MARK:网络失败或者获取数据为空的占位空视图
@@ -102,8 +122,21 @@ class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITab
     func EmptyOverlayClicked(){
         
     }
-    
+    //-------------------------Tableview------------------------
     // MARK: - UITableViewDelegate,UITableViewDataSources 需要实现的函数
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
     
     //返回节的个数
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -118,5 +151,39 @@ class CustomTableViewViewController: UIViewController ,UITableViewDelegate,UITab
         return UITableViewCell()
         
     }
+    //选中
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    //-------------------------Coll------------------------
+    // MARK: - UICollectionViewDelegate,UICollectionViewDataSource 需要实现的函数
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 0
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
     
 }

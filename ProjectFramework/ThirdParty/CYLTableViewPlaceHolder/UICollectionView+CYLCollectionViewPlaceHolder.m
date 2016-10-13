@@ -1,24 +1,24 @@
 //
-//  UITableViewController+CYLEmptyReloader.m
-//  CYLNoResultTableViewController
+//   aaas.m
+//  ProjectFramework
 //
-//  Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 15/12/23.
-//  Copyright © 2015年 https://github.com/ChenYilong . All rights reserved.
+//  Created by 购友住朋 on 16/10/13.
+//  Copyright © 2016年 HCY. All rights reserved.
 //
 
-#import "UITableView+CYLTableViewPlaceHolder.h"
+#import "UICollectionView+CYLCollectionViewPlaceHolder.h"
 #import "CYLTableViewPlaceHolderDelegate.h"
 
 #import <objc/runtime.h>
 
-@interface UITableView ()
+@interface UICollectionView ()
 
 @property (nonatomic, assign) BOOL scrollWasEnabled;
 @property (nonatomic, strong) UIView *placeHolderView;
 
 @end
 
-@implementation UITableView (CYLTableViewPlaceHolder)
+@implementation UICollectionView (CYLTableViewPlaceHolder)
 
 #pragma mark - init
 + (void)load {
@@ -71,16 +71,16 @@
 - (void)cyl_checkEmpty {
     BOOL isEmpty = YES;
     
-    id<UITableViewDataSource> src = self.dataSource;
+    id<UICollectionViewDataSource> src = self.dataSource;
     NSInteger sections = 1;
-    if ([src respondsToSelector: @selector(numberOfSectionsInTableView:)]) {
-        sections = [src numberOfSectionsInTableView:self];
+    if ([src respondsToSelector: @selector(numberOfSectionsInCollectionView:)]) {
+        sections = [src numberOfSectionsInCollectionView:self];
     }
-    for (int i = 0; i<sections; ++i) { 
-        NSInteger rows = [src tableView:self numberOfRowsInSection:i];
+    for (int i = 0; i<sections; ++i) {
+        NSInteger rows = [ src  collectionView:self numberOfItemsInSection:i ];
         if (rows) {
             isEmpty = NO;
-             break;
+            break;
         }
         
     }
@@ -89,7 +89,7 @@
             self.scrollWasEnabled = self.scrollEnabled;
             BOOL scrollEnabled = NO;
             if ([self respondsToSelector:@selector(enableScrollWhenPlaceHolderViewShowing)]) {
-                 scrollEnabled = [self performSelector:@selector(enableScrollWhenPlaceHolderViewShowing)];
+                scrollEnabled = [self performSelector:@selector(enableScrollWhenPlaceHolderViewShowing)];
                 if (!scrollEnabled) {
                     NSString *reason = @"There is no need to return  NO for `-enableScrollWhenPlaceHolderViewShowing`, it will be NO by default";
                     @throw [NSException exceptionWithName:NSGenericException
@@ -125,7 +125,7 @@
             self.placeHolderView = nil;
         }
     } else if (isEmpty) {
-        // Make sure it is still above all siblings. 
+        // Make sure it is still above all siblings.
         [self bringSubviewToFront:self.placeHolderView];
     }
 }
