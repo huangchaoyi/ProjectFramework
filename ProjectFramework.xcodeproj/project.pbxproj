@@ -65,7 +65,7 @@
 		2E390E1D1D2490A000A464FA /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E390E1C1D2490A000A464FA /* ShareView.swift */; };
 		2E3AB4901D1EE0F600F8BCFD /* ScreeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3AB48F1D1EE0F600F8BCFD /* ScreeningViewController.swift */; };
 		2E3CD6061D3086080057B7F2 /* LoginLogicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CD6051D3086080057B7F2 /* LoginLogicViewModel.swift */; };
-		2E3D62AE1D2AE1D900205EBC /* CustomTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D62AD1D2AE1D900205EBC /* CustomTableViewViewController.swift */; };
+		2E3D62AE1D2AE1D900205EBC /* CustomTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D62AD1D2AE1D900205EBC /* CustomTemplateViewController.swift */; };
 		2E46C1B71D2DA9180027D95B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E46C1B61D2DA9180027D95B /* CoreData.framework */; };
 		2E46C1BB1D2DC49F0027D95B /* CreatedbBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46C1BA1D2DC49F0027D95B /* CreatedbBase.swift */; };
 		2E55B7601D21D85E00E1A2E6 /* UpLoadPicManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E55B75F1D21D85E00E1A2E6 /* UpLoadPicManagerView.swift */; };
@@ -73,8 +73,6 @@
 		2E5E84331D399B88008BAA08 /* TemplatesSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E84321D399B88008BAA08 /* TemplatesSettings.bundle */; };
 		2E9FFC101D2594B3009B7B81 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9FFC0F1D2594B3009B7B81 /* Reachability.m */; };
 		2E9FFC121D259F43009B7B81 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9FFC111D259F43009B7B81 /* CFNetwork.framework */; };
-		2EAB76B61DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB76B31DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m */; };
-		2EAB76B71DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB76B51DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m */; };
 		2EF5844C1D93088F002A0DE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF584481D93088F002A0DE0 /* HomeViewController.swift */; };
 		2EF5844D1D93088F002A0DE0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5844B1D93088F002A0DE0 /* Home.storyboard */; };
 		2EF5846F1D9308E3002A0DE0 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF584521D9308E3002A0DE0 /* MyViewController.swift */; };
@@ -181,7 +179,7 @@
 		2E390E1C1D2490A000A464FA /* ShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		2E3AB48F1D1EE0F600F8BCFD /* ScreeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreeningViewController.swift; sourceTree = "<group>"; };
 		2E3CD6051D3086080057B7F2 /* LoginLogicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLogicViewModel.swift; sourceTree = "<group>"; };
-		2E3D62AD1D2AE1D900205EBC /* CustomTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewViewController.swift; sourceTree = "<group>"; };
+		2E3D62AD1D2AE1D900205EBC /* CustomTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTemplateViewController.swift; sourceTree = "<group>"; };
 		2E46C1B61D2DA9180027D95B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2E46C1BA1D2DC49F0027D95B /* CreatedbBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedbBase.swift; sourceTree = "<group>"; };
 		2E55B75F1D21D85E00E1A2E6 /* UpLoadPicManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpLoadPicManagerView.swift; sourceTree = "<group>"; };
@@ -191,12 +189,6 @@
 		2E9FFC0E1D2594B3009B7B81 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2E9FFC0F1D2594B3009B7B81 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2E9FFC111D259F43009B7B81 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2EAB76B01DAFECA500F54DDE /* CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolder.h; sourceTree = "<group>"; };
-		2EAB76B11DAFECA500F54DDE /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
-		2EAB76B21DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+CYLCollectionViewPlaceHolder.h"; sourceTree = "<group>"; };
-		2EAB76B31DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CYLCollectionViewPlaceHolder.m"; sourceTree = "<group>"; };
-		2EAB76B41DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
-		2EAB76B51DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
 		2EF584481D93088F002A0DE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2EF5844B1D93088F002A0DE0 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2EF584521D9308E3002A0DE0 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -500,7 +492,6 @@
 		27E6B86C1CF1E28400DD6418 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				2EAB76AF1DAFECA500F54DDE /* CYLTableViewPlaceHolder */,
 				2E276DD51D27149800800803 /* UINavigationController+SGProgress */,
 				2E9FFC0D1D2594B3009B7B81 /* NetworkCheck */,
 				27E6B8721CF1E28400DD6418 /* MBProgressHUD */,
@@ -544,7 +535,7 @@
 			children = (
 				2EF5847C1D9309DF002A0DE0 /* ModifyViewController.swift */,
 				2E3AB48F1D1EE0F600F8BCFD /* ScreeningViewController.swift */,
-				2E3D62AD1D2AE1D900205EBC /* CustomTableViewViewController.swift */,
+				2E3D62AD1D2AE1D900205EBC /* CustomTemplateViewController.swift */,
 				2E5E84321D399B88008BAA08 /* TemplatesSettings.bundle */,
 			);
 			path = Templates;
@@ -557,19 +548,6 @@
 				2E9FFC0F1D2594B3009B7B81 /* Reachability.m */,
 			);
 			path = NetworkCheck;
-			sourceTree = "<group>";
-		};
-		2EAB76AF1DAFECA500F54DDE /* CYLTableViewPlaceHolder */ = {
-			isa = PBXGroup;
-			children = (
-				2EAB76B01DAFECA500F54DDE /* CYLTableViewPlaceHolder.h */,
-				2EAB76B11DAFECA500F54DDE /* CYLTableViewPlaceHolderDelegate.h */,
-				2EAB76B21DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.h */,
-				2EAB76B31DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m */,
-				2EAB76B41DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.h */,
-				2EAB76B51DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m */,
-			);
-			path = CYLTableViewPlaceHolder;
 			sourceTree = "<group>";
 		};
 		2EF584441D93088F002A0DE0 /* ViewController */ = {
@@ -1043,7 +1021,6 @@
 				2EF584701D9308E3002A0DE0 /* AboutViewController.swift in Sources */,
 				2750AF7A1D0DADC9003D117E /* HttpsForget+Password.swift in Sources */,
 				2EF584781D9308E3002A0DE0 /* SettingsTableViewCell.swift in Sources */,
-				2EAB76B71DAFECA500F54DDE /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				2E276DDA1D27149800800803 /* SGProgressView.m in Sources */,
 				2EF584881D933885002A0DE0 /* AFNHelper.swift in Sources */,
 				0747CCED1D1285FD00C2FAB4 /* CustomImageView.swift in Sources */,
@@ -1068,14 +1045,13 @@
 				27137D4E1CFAF492009E0B37 /* Region.swift in Sources */,
 				2EF5847D1D9309DF002A0DE0 /* ModifyViewController.swift in Sources */,
 				2EF5846F1D9308E3002A0DE0 /* MyViewController.swift in Sources */,
-				2E3D62AE1D2AE1D900205EBC /* CustomTableViewViewController.swift in Sources */,
+				2E3D62AE1D2AE1D900205EBC /* CustomTemplateViewController.swift in Sources */,
 				2EF584731D9308E3002A0DE0 /* FeedbackViewController.swift in Sources */,
 				27137D521CFB0336009E0B37 /* RegionViewController.swift in Sources */,
 				2750AF741D0D9A4E003D117E /* LoginViewController.swift in Sources */,
 				2E3CD6061D3086080057B7F2 /* LoginLogicViewModel.swift in Sources */,
 				27E4D5631CB3AC3A002F32D1 /* PictrueSelectedViewController.swift in Sources */,
 				271653BC1CF616530028C465 /* RegisterViewController.swift in Sources */,
-				2EAB76B61DAFECA500F54DDE /* UICollectionView+CYLCollectionViewPlaceHolder.m in Sources */,
 				27609BD01CB257810041E8B7 /* AppDelegate.swift in Sources */,
 				2EF5847A1D9308E3002A0DE0 /* MyItemTableViewCell.swift in Sources */,
 				2E9FFC101D2594B3009B7B81 /* Reachability.m in Sources */,

@@ -19,4 +19,5 @@ target "ProjectFramework" do
     pod 'SWTableViewCell', '~> 0.3.7'           #可左右滑动的Cell (oc)
     pod 'IQKeyboardManager'                     #键盘管理 (oc)
     pod 'WMPageController'                      #左右滑动（oc)
+    pod 'DZNEmptyDataSet'                       #UITableview UICollectionView 空值时视图
 end

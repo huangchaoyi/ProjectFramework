@@ -33,13 +33,13 @@
 #import "UINavigationController+SGProgress.h"   //UINavigationController进度条
 #import "MBProgressHUD.h"       //HUD
 #import "MBProgressHUD+NJ.h"    //HUD 
-#import "Reachability.h"        //判断网络 
-#import "CYLTableViewPlaceHolder.h" //网络失败或者无数据的时候返回的PlaceHoldertableview
+#import "Reachability.h"        //判断网络
 #import <SDWebImage/UIImageView+WebCache.h>     //缓存图片
 #import <MJRefresh/MJRefresh.h>                //上啦下拉刷新第三方
 #import <MJExtension/MJExtension.h>                 
 #import <CYLTabBarController/CYLTabBarController.h> //第三方 TabBarcontroller
 #import <CWStatusBarNotification/CWStatusBarNotification.h> //系统通知Notification
 #import <SWTableViewCell/SWTableViewCell.h> //tableviewCell左右滑动
-#import <FMDB/FMDB.h> //数据库SQLliite 
+#import <FMDB/FMDB.h> //数据库SQLliite
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h> //Tableview CollectionView 空视图
  

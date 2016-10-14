@@ -17,6 +17,7 @@ PODS:
   - CWStatusBarNotification (2.3.5)
   - CYLTabBarController (1.6.0)
   - DOPDropDownMenu-Enhanced (1.0.0)
+  - DZNEmptyDataSet (1.8.1)
   - FDFullscreenPopGesture (1.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - CWStatusBarNotification (~> 2.3.5)
   - CYLTabBarController
   - DOPDropDownMenu-Enhanced (~> 1.0.0)
+  - DZNEmptyDataSet
   - FDFullscreenPopGesture (= 1.1)
   - FMDB
   - IQKeyboardManager
@@ -57,6 +59,7 @@ SPEC CHECKSUMS:
   CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
   CYLTabBarController: efbdd574772be17f17965acd7ee993f5972ff02f
   DOPDropDownMenu-Enhanced: 9ec473b16351b5b0b2d6ef87e7f666fe5ff54ad5
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
@@ -70,6 +73,6 @@ SPEC CHECKSUMS:
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   WMPageController: b3b9a62af7fe9a5bd7286236a5c4071e41a90fc4
 
-PODFILE CHECKSUM: af6b6a22dab8c54ec3a77210dde0f3002cc42ee3
+PODFILE CHECKSUM: d866fd5b49b4741b7ea35ab4fc625e59ec78d6ae
 
 COCOAPODS: 1.1.0.rc.2
